@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "@/components/ui/sheet"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const ibm = IBM_Plex_Sans({
+    subsets: ["latin"],
+    weight: ["100","200","300","400","500"],
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +28,56 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ibm.className} antialiased`}
       >
-        {children}
+        <div className={'hidden lg:block lg:flex'}>
+            <div className={'fixed flex flex-col bg-[#141313] w-[20%] shrink-0 h-screen sticky top-0 p-[40px] justify-between text-white'}>
+                <span>LOGO</span>
+                <div>
+                    <ul className={'flex flex-col text-[20px] gap-[20px]'}>
+                        <li>HOME</li>
+                        <li>ABOUT</li>
+                        <li>SERVICES</li>
+                        <li>WORKS</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Copyright ©2024 Fawzi Sayed. All right reserved.</span>
+                </div>
+            </div>
+            <div className={'flex-1 min-w-0 overflow-y-scroll'}>
+                {children}
+            </div>
+        </div>
+
+        <div className={'lg:hidden'}>
+            <div className={'bg-transparent w-full h-[60px] p-[10px] flex justify-between items-center'}>
+                <span>LOGO</span>
+                <Sheet>
+                    <SheetTrigger>Open</SheetTrigger>
+                    <SheetContent className={'bg-[#141313]'}>
+                        <SheetTitle/>
+                        <div className={'relative flex flex-col h-full text-white'}>
+                            <ul className={'flex flex-col text-[20px] gap-[20px] text-center items-center'}>
+                                <li>HOME</li>
+                                <li>ABOUT</li>
+                                <li>SERVICES</li>
+                                <li>WORKS</li>
+                                <li>CONTACT</li>
+                            </ul>
+                            <div className={'absolute bottom-[20px] text-center w-full'}>
+                                <span>Copyright ©2024 Fawzi Sayed. All right reserved.</span>
+                            </div>
+                        </div>
+                    </SheetContent>
+                </Sheet>
+            </div>
+            <div>
+                {children}
+            </div>
+        </div>
+
       </body>
     </html>
   );
