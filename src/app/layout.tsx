@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import 'devicon/devicon.min.css'
 import {
     Sheet,
     SheetContent,
@@ -27,12 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body
         className={`${ibm.className} antialiased`}
       >
         <div className={'hidden lg:block lg:flex'}>
             <div className={'fixed flex flex-col bg-[#141313] w-[20%] shrink-0 h-screen sticky top-0 p-[40px] justify-between text-white'}>
-                <span>LOGO</span>
+                <div className={'size-[50px] rounded-full bg-white'}></div>
                 <div>
                     <ul className={'flex flex-col text-[20px] gap-[20px]'}>
                         <li>HOME</li>
