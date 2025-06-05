@@ -132,6 +132,8 @@ const Page = () => {
                         <i className="devicon-gitlab-plain text-white text-5xl hover:scale-110 transition-transform" />
                         <i className="devicon-docker-plain text-white text-5xl hover:scale-110 transition-transform" />
                         <i className="devicon-postman-plain text-white text-5xl hover:scale-110 transition-transform" />
+                        <i className="devicon-figma-plain text-white text-5xl hover:scale-110 transition-transform" />
+                        <i className="devicon-notion-plain text-white text-5xl hover:scale-110 transition-transform" />
                     </div>
                 </div>
             </div>
