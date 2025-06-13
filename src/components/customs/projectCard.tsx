@@ -4,7 +4,7 @@ const ProjectCard = () => {
     return (
         <div className={'w-full flex flex-col xl:flex-row-reverse gap-[10px] xl:gap-[30px] justify-between h-fit xl:h-[200px]'}>
             <div className={'relative w-full lg:w-3/5 h-[200px] overflow-hidden'}>
-                <img src="/pictures/project.svg" alt="" className={'absolute inset-0 w-full h-full object-cover'}/>
+                <img src={'https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/projects/pet-commerce.webp'} alt="" className={'absolute inset-0 w-full h-full object-cover'}/>
             </div>
             <div className={'flex flex-row xl:flex-col justify-between w-full lg:w-2/5'}>
                 <div className={'flex flex-col'}>
