@@ -41,21 +41,7 @@ export default function RootLayout({
         className={`${ibm.className} antialiased`}
       >
         <div className={'hidden lg:block lg:flex'}>
-            <div className={'fixed flex flex-col bg-[#141313] w-[20%] shrink-0 h-screen sticky top-0 p-[40px] justify-between text-white'}>
-                <div className={'size-[50px] rounded-full bg-white'}></div>
-                <div>
-                    <ul className={'flex flex-col text-[20px] gap-[20px]'}>
-                        <button onClick={handleGoToHome} className={'w-fit'}><li>HOME</li></button>
-                        <button onClick={handleGoToAbout} className={'w-fit'}><li>ABOUT</li></button>
-                        <button onClick={handleGoToServices} className={'w-fit'}><li>SERVICES</li></button>
-                        <button onClick={handleGoToProjects} className={'w-fit'}><li>WORKS</li></button>
-                        <button onClick={handleGoToContact} className={'w-fit'}><li>CONTACT</li></button>
-                    </ul>
-                </div>
-                <div>
-                    <span>Copyright ©2024 Fawzi Sayed. All right reserved.</span>
-                </div>
-            </div>
+
             <div className={'flex-1 min-w-0 overflow-y-scroll'}>
                 {children}
             </div>

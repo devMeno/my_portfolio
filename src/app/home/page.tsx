@@ -2,6 +2,11 @@ import React from 'react';
 import Head from "next/head";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
 import ProjectCard from "@/components/customs/projectCard";
+import {
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+} from "@/components/ui/hover-card"
 
 const Page = () => {
     return (
@@ -147,11 +152,11 @@ const Page = () => {
                         <span className={'font-bold text-[48px]/[56px]'}>MY SPECIALITIES</span>
                         <div>
                             <Accordion type="single" collapsible>
-                                <AccordionItem value="item-1" className={'my-[40px]'}>
+                                <AccordionItem value="item-1" className={'my-[15px] lg:my-[40px]'}>
                                     <AccordionTrigger>
-                                        <div className={'w-full flex gap-4 items-center text-[32px]/[48px]'}>
+                                        <div className={'w-full flex gap-4 items-center text-[20px] lg:text-[32px]/[48px]'}>
                                             <span>.</span>
-                                            <span className={'text-[32px]/[48px]'}>Development of custom websites & applications</span>
+                                            <span>Development of custom websites & applications</span>
                                         </div>
                                     </AccordionTrigger>
                                     <AccordionContent>
@@ -165,11 +170,11 @@ const Page = () => {
                                         </div>
                                     </AccordionContent>
                                 </AccordionItem>
-                                <AccordionItem value="item-2" className={'my-[40px]'}>
+                                <AccordionItem value="item-2" className={'my-[15px] lg:my-[40px]'}>
                                     <AccordionTrigger>
-                                        <div className={'w-full flex gap-4 items-center text-[32px]/[48px]'}>
+                                        <div className={'w-full flex gap-4 items-center text-[20px] lg:text-[32px]/[48px]'}>
                                             <span>.</span>
-                                            <span className={'text-[32px]/[48px]'}>Frontend & modern UI integration</span>
+                                            <span>Frontend & modern UI integration</span>
                                         </div>
                                     </AccordionTrigger>
                                     <AccordionContent>
@@ -183,11 +188,11 @@ const Page = () => {
                                         </div>
                                     </AccordionContent>
                                 </AccordionItem>
-                                <AccordionItem value="item-3" className={'my-[40px]'}>
+                                <AccordionItem value="item-3" className={'my-[15px] lg:my-[40px]'}>
                                     <AccordionTrigger>
-                                        <div className={'w-full flex gap-4 items-center text-[32px]/[48px]'}>
+                                        <div className={'w-full flex gap-4 items-center text-[20px] lg:text-[32px]/[48px]'}>
                                             <span>.</span>
-                                            <span className={'text-[32px]/[48px]'}>Backend development & business logic</span>
+                                            <span>Backend development & business logic</span>
                                         </div>
                                     </AccordionTrigger>
                                     <AccordionContent>
@@ -200,11 +205,11 @@ const Page = () => {
                                         </div>
                                     </AccordionContent>
                                 </AccordionItem>
-                                <AccordionItem value="item-4" className={'my-[40px]'}>
+                                <AccordionItem value="item-4" className={'my-[15px] lg:my-[40px]'}>
                                     <AccordionTrigger>
-                                        <div className={'w-full flex gap-4 items-center text-[32px]/[48px]'}>
+                                        <div className={'w-full flex gap-4 items-center text-[20px] lg:text-[32px]/[48px]'}>
                                             <span>.</span>
-                                            <span className={'text-[32px]/[48px]'}>Deployment, hosting & online availability</span>
+                                            <span>Deployment, hosting & online availability</span>
                                         </div>
                                     </AccordionTrigger>
                                     <AccordionContent>
@@ -217,11 +222,11 @@ const Page = () => {
                                         </div>
                                     </AccordionContent>
                                 </AccordionItem>
-                                <AccordionItem value="item-5" className={'my-[40px]'}>
+                                <AccordionItem value="item-5" className={'my-[15px] lg:my-[40px]'}>
                                     <AccordionTrigger>
-                                        <div className={'w-full flex gap-4 items-center text-[32px]/[48px]'}>
+                                        <div className={'w-full flex gap-4 items-center text-[20px] lg:text-[32px]/[48px]'}>
                                             <span>.</span>
-                                            <span className={'text-[32px]/[48px]'}>Creating online shops with Shopify</span>
+                                            <span>Creating online shops with Shopify</span>
                                         </div>
                                     </AccordionTrigger>
                                     <AccordionContent>
@@ -243,7 +248,7 @@ const Page = () => {
                             <span className={'italic font-semibold'}>What can I use?</span>
                             <span className={'font-bold text-[36px]/[42px] lg:text-[48px]/[56px]'}>MY STACK</span>
                             <span className={'w-full lg:w-2/3'}>
-                            Hello there! My name is Jacob Jones.I am a web designer & developer, and I'm very passionate and dedicated to my work.
+                                I use a modern, high-performance stack, adapted to the current demands of web development. It enables me to design robust, scalable and optimised applications, both on the user interface and the server side.
                         </span>
                         </div>
                         <div className={'w-full lg:w-1/2 flex flex-col gap-4'}>
@@ -253,7 +258,14 @@ const Page = () => {
 
                                 <div className="w-full flex flex-wrap  gap-4 my-[20px]">
                                     {/* Icônes avec Tailwind inline */}
-                                    <i className="devicon-html5-plain text-white text-5xl hover:scale-110 transition-transform" />
+                                    <HoverCard>
+                                        <HoverCardTrigger>
+                                            <i className="devicon-html5-plain text-white text-5xl hover:scale-110 transition-transform" />
+                                        </HoverCardTrigger>
+                                        <HoverCardContent>
+                                            HTML
+                                        </HoverCardContent>
+                                    </HoverCard>
                                     <i className="devicon-css3-plain text-white text-5xl hover:scale-110 transition-transform" />
                                     <i className="devicon-javascript-plain text-white text-5xl hover:scale-110 transition-transform" />
                                     <i className="devicon-typescript-plain text-white text-5xl hover:scale-110 transition-transform" />
