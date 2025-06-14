@@ -9,6 +9,34 @@ import {
 } from "@/components/ui/hover-card"
 
 const Page = () => {
+
+    const projectsList = [
+        {
+            url: "https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/projects/flowers-shop.webp",
+            title: "FLOWERS-SHOP",
+            type: "Ecommerce",
+            link: "https://flower-shop-phi-ruddy.vercel.app/",
+        },
+        {
+            url: "https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/projects/navytech.webp",
+            title: "NAVYTECH",
+            type: "Landing page",
+            link: "https://navytech-landing-page.vercel.app/"
+        },
+        {
+            url: "https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/projects/pet-commerce.webp",
+            title: "PET-COMMERCE",
+            type: "Frontend",
+            link: "https://pet-commerce-platform.vercel.app"
+        },
+        {
+            url: "https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/projects/eko.webp",
+            title: "EKO",
+            type: "Shopify",
+            link: "https://eko-business.com/"
+        }
+    ];
+
     return (
         <>
         <div className={'w-full flex flex-row justify-between'}>
@@ -80,11 +108,10 @@ const Page = () => {
                                     <div>
                                         <div className={'flex gap-2 items-center'}>
                                             <span className={'text-[48px] font-bold bg-gradient-to-r from-[#FFB147] to-[#B86ADF] bg-clip-text text-transparent'}>01+</span>
-                                            <span className={'text-[18px]/[20px] font-bold'}>Years <br/> experience...</span>
+                                            <span className={'text-[18px]/[20px] font-bold'}>Year <br/> experience...</span>
                                         </div>
                                         <span>
-                                Hello there! My name is Jacob Jones.
-                                I am a web designer & developer, and I'm very passionate and dedicated to my work.
+                                Over a year's experience in creating functional, scalable web solutions, ensuring code quality, performance optimisation and end-user satisfaction.
                             </span>
                                     </div>
                                     <div>
@@ -162,7 +189,7 @@ const Page = () => {
                                     <AccordionContent>
                                         <div className={'w-full flex flex-col md:flex-row gap-4 items-center'}>
                                             <div className={'w-full md:w-1/2'}>
-                                                <img src="/pictures/web-dev.jpg" alt="" className={'w-[430px] h-[180px]'}/>
+                                                <img src="https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/accordions-images/web-dev.webp" alt="" className={'w-[430px] h-[180px]'}/>
                                             </div>
                                             <div className={'w-full md:w-1/2'}>
                                                 I design websites and custom applications tailored to the specific needs of each project, whether it's a showcase site, a blog, a SaaS platform, a customer area or a business tool. Each project is designed to offer a fluid, intuitive and responsive experience, with particular attention paid to performance, design and accessibility.
@@ -180,7 +207,7 @@ const Page = () => {
                                     <AccordionContent>
                                         <div className={'w-full flex flex-col md:flex-row gap-4 items-center'}>
                                             <div className={'w-full md:w-1/2'}>
-                                                <img src="/pictures/frontend-pic.jpg" alt="" className={'w-[430px] h-[180px]'}/>
+                                                <img src="https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/accordions-images/frontend-pic_1.webp" alt="" className={'w-[430px] h-[180px]'}/>
                                             </div>
                                             <div className={'w-full md:w-1/2'}>
                                                 Based on mock-ups or a visual brief, I transform ideas into concrete, responsive web interfaces compatible with all media (desktop, tablet, mobile). I ensure pixel-perfect integration that complies with web standards, while optimising usability, navigation and accessibility (semantic HTML, ARIA, etc.).
@@ -198,7 +225,7 @@ const Page = () => {
                                     <AccordionContent>
                                         <div className={'w-full flex flex-col md:flex-row gap-4 items-center'}>
                                             <div className={'w-full md:w-1/2'}>
-                                                <img src="/pictures/backend-pic.jpg" alt="" className={'w-[430px] h-[180px]'}/>
+                                                <img src="https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/accordions-images/backend-pic.webp" alt="" className={'w-[430px] h-[180px]'}/>
                                             </div>
                                             <div className={'w-full md:w-1/2'}>
                                                 I set up the technical structure on the server side: creation of REST or GraphQL APIs, database management, form processing, authentication/authorisation (auth, JWT, OAuth), file storage, user management, etc. I ensure the security, reliability and scalability of the functionalities.                                            </div>
@@ -215,7 +242,7 @@ const Page = () => {
                                     <AccordionContent>
                                         <div className={'w-full flex flex-col md:flex-row gap-4 items-center'}>
                                             <div className={'w-full md:w-1/2'}>
-                                                <img src="/pictures/web-pic.jpg" alt="" className={'w-[430px] h-[180px]'}/>
+                                                <img src="https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/accordions-images/web-pic.webp" alt="" className={'w-[430px] h-[180px]'}/>
                                             </div>
                                             <div className={'w-full md:w-1/2'}>
                                                 I'm in charge of deploying projects on modern services (such as Vercel, Render, Railway, or VPS with Docker) with domain name management, setting up HTTPS (SSL), optimising performance, and configuring production and development environments.                                            </div>
@@ -232,7 +259,7 @@ const Page = () => {
                                     <AccordionContent>
                                         <div className={'w-full flex flex-col md:flex-row gap-4 items-center'}>
                                             <div className={'w-full md:w-1/2'}>
-                                                <img src="/pictures/shopify-pic.jpg" alt="" className={'w-[430px] h-[180px]'}/>
+                                                <img src="https://agwzsyjzbifvwetpjotf.supabase.co/storage/v1/object/public/portfolio/accordions-images/shopify-pic.webp" alt="" className={'w-[430px] h-[180px]'}/>
                                             </div>
                                             <div className={'w-full md:w-1/2'}>
                                                 I create high-performance, aesthetically pleasing online shops using Shopify, customising both free and paid themes. Thanks to an advanced command of the platform, I'm able to design fully branded shops, aligned with the brand's visual identity, while ensuring a fluid, conversion-optimised user experience. From product configuration to the integration of useful apps, every detail is thought through to deliver a turnkey shop that's ready to sell.
@@ -320,10 +347,13 @@ const Page = () => {
                         <span className={'font-bold italic'}>Works</span><br/>
                         <span className={'font-bold text-[36px]/[42px] lg:text-[48px]/[56px]'}>RECENTS PROJECTS</span>
                         <div className={'grid grid-cols-1 lg:grid-cols-2 gap-10 pt-[50px]'}>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
+                            {
+                                projectsList.map((project , index) => (
+                                    <div key={index}>
+                                        <ProjectCard link={project.link} title={project.title} typeOfProject={project.type} url={project.url} />
+                                    </div>
+                                ))
+                            }
                         </div>
                         <button className={'mx-auto flex gap-2 items-center my-[20px] lg:my-[50px] bg-[#141313] text-white font-medium text-[14px] lg:text-[18px] h-[32px] lg:h-[56px] px-[30px]'}>View more
                             <img src="/pictures/north_east.svg" alt="" className={'size-[24px]'}/>
